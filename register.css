@@ -1,0 +1,127 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* overflow: hidden; */
+}
+
+/* Track */
+::-webkit-scrollbar 
+{
+    width: 6px;
+    height: 6px;
+    background-color: #ccc;
+    border-radius: 20px;
+}
+/* Thumb */
+::-webkit-scrollbar-thumb 
+{
+    background-color: blueviolet;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-track 
+{
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.titname
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+    color: blueviolet;
+    font-size: 23px;
+}
+
+.container 
+{
+    width: 646px;
+    height: 551px;
+    background: aquamarine;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+    border-radius: 10px;
+    /* margin: 25px 463px; */
+    padding: 10px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-left: 28%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.container .tag1 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 21px;
+    margin: -1px;
+    /* background: burlywood; */
+}
+
+.container .tag1 label 
+{
+    margin-left: 4px;
+    font-size: 20px;
+    font-weight: 700;
+    color: blue;
+    margin-right: 11px;
+    width: 204px;
+}
+
+.container .tag1 input[type="text"] 
+{
+    margin-left: 0px;
+    text-align: center;
+    width: 535px;
+    height: 30px;
+    border-radius: 7px;
+    border: 2px solid blue;
+}
+
+.container .tag1 input[type="text"]:focus
+{
+    border-radius: 7px;
+    border: 2px solid blue;
+    text-align: center;
+}
+
+.container .tag1 input[type="text"]::placeholder 
+{
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.container .tag1 input[type="button"]
+{
+    width: 165px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: blueviolet;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+    border: transparent;
+    cursor: pointer;
+}
+
+.container .tag1 button
+{
+    width: 165px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: blueviolet;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+    border: transparent;
+    cursor: pointer;
+}

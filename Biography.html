@@ -1,0 +1,559 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.pinimg.com/474x/90/72/73/9072732aa376ddbcb414a061d911f6f6.jpg" type="image/x-icon">
+
+    <title> Prabhas Bio Graphy </title>
+
+    <style>
+        /* Reset default browser styles */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        ::-webkit-scrollbar
+        {
+            width: 0px;
+        }
+
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f2f2f2;
+        }
+    
+        /* Style for the navbar container */
+        nav {
+          background-color: #333;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    
+        /* Style for the navbar list */
+        ul.navbar-list {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center; /* Center the items horizontally */
+          align-items: center; /* Center the items vertically */
+          height: 100%; /* Set the height of the navbar */
+        }
+    
+        /* Style for each navbar item */
+        ul.navbar-list li {
+          margin-right: 15px;
+        }
+    
+        /* Style for the navbar links */
+        ul.navbar-list li a {
+          display: block;
+          padding: 12px 17px;
+          color: #fff;
+          font-size:20px;
+          text-decoration: none;
+          font-family: sans-serif; /* Apply the sans-serif font style */
+          background-color: #333;
+          border-radius: 8px;
+          transition: all 0.3s ease; /* Add transition effect */
+        }
+    
+        /* Style for the navbar links on hover */
+        ul.navbar-list li a:hover {
+          background-color: #fff;
+          color: #333;
+          border-radius: 10px; /* Apply border radius on hover */
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Apply box shadow on hover */
+        }
+
+        h1 {
+        color: #333333;
+        text-align: center;
+        }
+        
+        .container {
+        max-width: 100%;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .image {
+        text-align: center;
+        margin-bottom: 20px;
+        }
+        
+        .image img {
+        width: 250px;
+        border-radius: 50%;
+        }
+        
+        p {
+        line-height: 1.5;
+        margin-bottom: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+                padding:2%; /* hope body */
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            }
+
+            .grid-item {
+            position: relative;
+            overflow: hidden;
+            padding:20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            }
+
+            .grid-item img {
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+            }
+
+            .grid-item:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            }
+
+            .grid-item:hover img {
+            transform: scale(1.0);
+            }
+
+            /* Optional: Add a neumorphic effect */
+            .grid-item::before,
+            .grid-item::after {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(145deg, #e6e6e6, #ffffff);
+            box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.7),
+                        5px 5px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            z-index: -1;
+            }
+
+      /* .per
+      {
+        justify-content:center;
+        align-items:center;
+        color:red;
+      } */
+      .per
+      {
+            position: relative;
+            justify-content:center;
+            align-items:center;
+            margin-left: 20%;
+            color:blue;
+            width: 250px;
+            overflow: hidden;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+      }
+
+      .details
+      {
+        /* display: flex; */
+        position: relative;
+        /* justify-content:center;
+        align-items:center; */
+        margin-left: 35%;
+        color:#333;
+        width: 63%;
+
+        margin-top:9px;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        transition: all 0.3s ease;
+      }
+      
+      .p1
+      {
+            /* display: flex; */
+        
+            position: relative;
+            overflow: hidden;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+      }
+
+      .part1
+      {
+        margin-left: 10px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .part2
+      {
+        margin-left: 65px;
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+      .back-to-top-button 
+      {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: #333;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+      }
+
+      .back-to-top-button.show 
+      {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .back-to-top-button svg 
+      {
+        width: 24px;
+        height: 24px;
+        fill: #fff;
+      }
+
+      </style>
+
+</head>
+
+<body>
+    <nav>
+        <!-- <img style="border-radius: 50%;"  src="https://images.mid-day.com/images/images/2016/jan/20Prabhas-l.jpg" alt="Prabhas Profile Pic"> -->
+        <ul class="navbar-list">
+            <li> <img style="padding-top:12px; border-radius: 50%; width: 80px;" src="https://swall.teahub.io/photos/small/206-2061519_prabhas-hd-images-photos-hd-wallpapers-4k-5k.jpg" alt="Prabhas Profile Pic"> </li>
+            <li><a href="#personal"> Personal </a></li>
+            <li><a href="#family"> Family </a></li>
+            <li><a href="#study"> Education </a></li>
+            <li><a href="#hobby"> Hobbies </a></li>
+            <li><a href="#gift"> Awards </a></li>
+            <li><a href="#pics"> Gallery </a></li>
+        </ul>
+  </nav>
+
+  <div class="container">
+    <h1> VENKATA SATYANARAYANA PRABHAS RAJU UPPALAPATI </h1>
+    <br>
+    <div class="image">
+      <img src="https://i.pinimg.com/originals/f9/8a/8f/f98a8fef5bfec6aa8cf49dfd432a4e36.jpg" alt="Virat Kohli">
+    </div>
+    
+    <div class = "p1"> 
+      <div class="per"> 
+        <h2 id="personal"> Personal Details : </h2>
+      </div>
+
+      <div class="details">
+        <div style="display:flex">
+          <p class="part1"> Nickname  : </p>
+          <p class="part2"> Darling, Young Rebel Star 💥 💫 ✨ </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> Birth Date  : </p>
+          <p class="part2"> October 23, 1979 </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> Age : </p>
+          <p class="part2" style="margin-left: 125px;"> 44 Years (Till 2023) </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> Birth Place : </p>
+          <p class="part2" style="margin-left: 62px;"> Chennai , Tamil Nadu, India </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> Home Place  : </p>
+          <p class="part2" style="margin-left: 60px;"> Hyderbad, Telangana, India </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> Nationality  : </p>
+          <p class="part2"> Indian </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> Profession </p>
+          <p class="part2" style="margin-left: 75px;"> Indian Film Actor </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> Height  : </p>
+          <p class="part2" style="margin-left: 100px;"> 6 ' 2 " ( in Feet Inches ) </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> Weight : </p>
+          <p class="part2" style="margin-left: 100px;"> 95 kg ( in Kilo Grams ) </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> Body Measurements : </p>
+          <p class="part2"> Chest : 44 Inches <br>  Waist : 34 Inches <br> Biceps : 18 Inches </p>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="per"> 
+        <h2 id="family"> Family Details : </h2>
+      </div>
+
+      <div class="details">
+        <div style="display:flex">
+          <p class="part1"> Father's Name  : </p>
+          <p class="part2"> Uppalapati Surya Naryana Raju </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> Mother's Name  : </p>
+          <p class="part2"> Siva Kumari </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> Brother's Name  : </p>
+          <p class="part2"> Pramod Uppalapati (Elder) </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> Sister's Name  : </p>
+          <p class="part2"> Pragathi (Elder) </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> Uncle  : </p>
+          <p class="part2" style="margin-left: 145px;"> Krishnam Raju </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> Cousin's Name  : </p>
+          <p class="part2"> Gopichand (Film Actor) </p>
+        </div>
+
+      </div>
+
+      <br>
+      <br>
+
+      <div class="per"> 
+        <h2 id="study"> Education Details : </h2>
+      </div>
+
+      <div class="details">
+        <div style="display:flex">
+          <p class="part1"> Schooling  : </p>
+          <p class="part2" style="margin-left: 85px;"> DNR School, Bhimavaram, Andhra Pradesh </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> Intermediate  : </p>
+          <p class="part2"> Sri Chaitanya College, Hyderbad, Telangana </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> Engineering : </p>
+          <p class="part2"> Bachelor Of Technology </p>
+        </div>
+
+      </div>
+
+      <br>
+      <br>
+
+      <div class="per"> 
+        <h2 id="hobby"> Hobbies : </h2>
+      </div>
+
+      <div class="details">
+        <div style="display:flex">
+          <p class="part1"> 1. &NonBreakingSpace; Playing Volley Ball </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> 2. &NonBreakingSpace; Reading Books </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> 3. &NonBreakingSpace; Listening Music </p>
+        </div>
+  
+      </div>
+
+      <br>
+      <br>
+
+      <div class="per"> 
+        <h2> Interesting Facts : </h2>
+      </div>
+
+      <div class="details">
+        <div style="display:flex">
+          <p class="part1"> 1. &NonBreakingSpace; He considers himself a food lover, and in several of his interviews, he has endorsed his love for food, and this is the reason that he wanted to pursue his career in the hotel business. </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> 2. &NonBreakingSpace; He got his breakthrough with his role as 'Venkat' in the film 'Varsham' in the year 2004. </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> 3. &NonBreakingSpace; He has received more than 5000 marriage proposals after the huge success of the 'Baahubali series'. </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> 4. &NonBreakingSpace; He is an avid reader and has a personal library at his residence. </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> 5. &NonBreakingSpace; He is a nature and bird lover and has a garden that has birds of various types, that too in open cages. </p>
+        </div>
+  
+      </div>
+
+      <br>
+      <br>
+
+      <div class="per"> 
+        <h2 id="gift"> Acheivements : </h2>
+      </div>
+
+      <div class="details">
+        <div style="display:flex">
+          <p class="part1"> Nandi Awards : </p>
+          <p class="part2" style="margin-left: 160px;"> 2013 : Best Actor For MIRCHI </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> Cinema Awards : </p>
+          <p class="part2" style="margin-left: 135px;"> 2010 : Critic's Choice Actor For Darling </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> SIIM Awards : </p>
+          <p class="part2" style="margin-left: 170px;"> 2017 : Best Actor For Bahubali 2 : The Conclusion </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> Santosham Film Awards : </p>
+          <p class="part2"> 2015 : Best Actor For Bahubali : The Begining </p>
+        </div>
+
+        <div style="display:flex">
+          <p class="part1"> ETC Bollywood Award : </p>
+          <p class="part2" style="margin-left: 80px;"> 2019 : Highest Grosssing Debut Actor For SAAHO </p>
+        </div>
+      </div>
+
+      <br>
+
+    </div>
+
+    <br>
+    <br>
+
+    <div class="per" style="width:363px; margin: auto; text-align: center; color: blueviolet;"> 
+      <h2 id="pics"> Gallery Of Photography </h2>
+    </div>
+
+    <br>
+
+    <div class="grid-container">
+        <div class="grid-item">
+          <img src="https://i.pinimg.com/550x/68/53/fd/6853fd7fc8c0133aa5e7896bb35957f6.jpg" alt="Image 1">
+        </div>
+        <div class="grid-item">
+          <img src="https://i.pinimg.com/originals/08/c9/f3/08c9f3ff07f3a6ec8dcc05ecc16f3c97.jpg" alt="Image 2">
+        </div>
+        <div class="grid-item">
+          <img src="https://i.pinimg.com/736x/13/cf/bc/13cfbce1bbd53559b8c76267ef5ebe7a--actors-movie.jpg" alt="Image 3">
+        </div>
+        <div class="grid-item">
+          <img src="https://i.pinimg.com/originals/7f/23/48/7f23483ffa6cb7d64b57f5bf13cce8b8.jpg" alt="Image 4">
+        </div>
+        <div class="grid-item">
+          <img src="https://moviegalleri.net/wp-content/gallery/adipurush-fl/Prabhas-Adipurush-Kannada-Movie-HD-Posters.jpg" alt="Image 5">
+        </div>
+        <div class="grid-item">
+          <img src="https://i.pinimg.com/originals/0b/16/5b/0b165b6d2beaf50a8a6bd715077ea344.jpg" alt="Image 6">
+        </div>
+        <div class="grid-item">
+          <img src="https://w0.peakpx.com/wallpaper/666/707/HD-wallpaper-prabhas-baahubali-kgf-rrr-saaho.jpg" alt="Image 7">
+        </div>
+        <div class="grid-item">
+          <img src="https://cdn.wallpapersafari.com/43/8/iT6J1e.jpg" alt="Image 8">
+        </div>
+        <div class="grid-item">
+          <img src="https://mumbaimirror.indiatimes.com/photo/62903789.cms" alt="Image 9">
+        </div>
+      </div>
+
+      <br> 
+
+      <div class="per" style="width:363px; margin: auto; text-align: center; color: blueviolet;"> 
+        <h2> 😎 Thank You Darlings 🥰 </h2>
+      </div>
+
+      <br>
+
+  </div>
+
+  <!-- Back to top button -->
+  <a href="#top" class="back-to-top-button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path d="M7 14l5-5 5 5H7z"/>
+    </svg>
+  </a>
+
+  <script>
+       // Show or hide the back-to-top button based on scroll position
+        window.addEventListener('scroll', function() {
+            var button = document.querySelector('.back-to-top-button');
+            if (window.pageYOffset > 100) {
+                button.classList.add('show');
+            } else {
+                button.classList.remove('show');
+            }
+        });
+
+        // Smooth scroll to top when the button is clicked
+        document.querySelector('.back-to-top-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+  </script>
+
+</body>
+</html>

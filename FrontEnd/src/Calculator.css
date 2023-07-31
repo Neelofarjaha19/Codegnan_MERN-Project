@@ -1,0 +1,73 @@
+.rootApp 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+    width: 300px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 30px 0;
+  }
+  
+  .display {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 24px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+  
+  .keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  }
+  
+  button {
+    width: 100%;
+    height: 40px;
+    background-color: #eee;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button.operator {
+    background-color: #ff9a00;
+    color: #fff;
+  }
+  
+  button.operator:hover {
+    background-color: #ff7d00;
+  }
+  
+  button.clear {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  
+  button.clear:hover {
+    background-color: #cc0000;
+  }
+  

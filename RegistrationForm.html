@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> validating The Registration Form </title>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="./register.css"/>
+    <script src="./register.js"></script>
+
+</head>
+<body>
+    <div class="titname">
+        <h1> Registeration Form validation </h1>
+    </div>
+
+    <form onsubmit="return validate()">
+        
+        <div class="container">
+            <div class="tag1">
+                <label for="fn"> First Name : </label>
+                <input type="text" name="fn" id="fn" placeholder="Enter your name">
+            </div>
+
+            <div class="tag1">
+                <label for="mob"> Mobile Number : </label>
+                <input type="text" name="mob" id="mob" placeholder="Enter your Mobile Number">
+            </div>
+
+            <div class="tag1">
+                <label for="email"> Email : </label>
+                <input type="text" name="email" id="email" placeholder="Enter your Email id">
+            </div>
+
+            <div class="tag1">
+                <label for="us"> USA Number : </label>
+                <input type="text" name="us" id="us" placeholder="Enter your US Number">
+            </div>
+
+            <div class="tag1">
+                <label for="pass"> Password : </label>
+                <input type="text" name="pass" id="pass" placeholder="Enter your Password">
+            </div>
+
+            <div class="tag1">
+                <label for="dob"> DOB : </label>
+                <input type="text" name="dob" id="dob" placeholder=" Fomat DD/MM/YYYY">
+            </div>
+
+            <div class="tag1">
+                <button> Register </button>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
